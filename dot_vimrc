@@ -1,10 +1,35 @@
 call plug#begin()
 
 Plug 'tpope/vim-commentary'
+autocmd FileType c,cpp set cms=//\ %s
+" gcc注释一行，可使用.重复注释
+" gcu取消注释，也可重复使用gcc消除注释
+" gcgc可以消除连篇的注释
+" 可视模式gc,既可以注释也可以消除注释
+" autocmd可以判断文件类型自行定义注释
+
 
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+let g:VM_maps = {}
+let g:VM_maps["Add Cursor Down"]             = '<C-j>'
+let g:VM_maps["Add Cursor Up"]               = '<C-k>'
+let g:VM_maps["Undo"] = 'u'
+let g:VM_maps["Redo"] = '<C-r>'
+"1.可以作为<C-v>的替代<C-j><C-k>
+"2.可以作为搜索替换的替代
 
-	"快速移动输入f <char><char>,可以快速移动到匹配的位置
+
+
+Plug 'airblade/vim-gitgutter'
+set updatetime=100
+highlight! link SignColumn LineNr 
+" 最多实现1000个标志，如果想使用消除约束个可以使用"-1"
+let g:gitgutter_max_signs = 1000  " default value (Vim < 8.1.0614, Neovim < 0.4.0)
+let g:gitgutter_enabled = 0
+" let g:gitgutter_max_signs = -1   " default value (otherwise)
+nmap <C-g><C-g> :GitGutterToggle<CR>
+
+"快速移动输入f <char><char>,可以快速移动到匹配的位置
 Plug 'justinmk/vim-sneak'
 map f <Plug>Sneak_s
 map F <Plug>Sneak_S
@@ -24,7 +49,7 @@ let g:wildfire_objects = ["i'", "i>", "i ",'i"', "i)", "i]", "i}","iw", "ip", "i
 	"添加git状态，可在vim中进行git操作
 Plug 'tpope/vim-fugitive'
 
-	"vim添加状态栏
+	"vim底部添加状态栏
 Plug 'itchyny/lightline.vim'
 set laststatus=2		"使能lightline
 let g:lightline = {
@@ -43,6 +68,7 @@ let g:lightline = {
 "      \ 'separator': { 'left': '▓░', 'right': '░▓' },
 "      \ 'subseparator': { 'left': '▓░', 'right': '░▓' }
 "      \ }
+" 如果状态栏有问题可以使用注释的代码
 
 function! LightlineFugitive() 
  	if exists('*FugitiveHead') 
@@ -241,16 +267,10 @@ set hlsearch
 set ignorecase
 "Tab=4个空格
 set ts=4
+"可以使用系统复制板
+set clipboard=unnamed
 
-
-
-
-
-
-
-
-
-
-
+noremap <leader>y "+y
+noremap <leader>p "+p
 
 
