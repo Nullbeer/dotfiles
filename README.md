@@ -11,5 +11,5 @@ make install-from-git-working-copy
 ```
 
 # 将我的配置复制到你的电脑上
-`chezmoi init https://github.com/$GITHUB_USERNAME/dotfiles.git`
+`chezmoi init https://github.com/Nullbeer/dotfiles`
 
