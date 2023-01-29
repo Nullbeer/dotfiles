@@ -1,0 +1,15 @@
+# pack-refs with: peeled fully-peeled sorted 
+6d3c10dbbef22788a89c8812aabd973bb466cf43 refs/remotes/origin/indent/indent_assign_on_symbol
+e4e0ada8a99f26262926efc5f96c3bf29b869a48 refs/remotes/origin/indent/standalone_blocks
+b993a00d146891e2647dec4b2e351d03e4baa3b2 refs/remotes/origin/indent_from_syntax
+0b88f2ccf81983944bf00d15ec810dd807053d19 refs/remotes/origin/master
+bfd776646ad1b9f4bf8a4d5fa5107973a671ade6 refs/remotes/origin/omni/review
+e2a746a066924208e0fef48bdaea992459c838f0 refs/remotes/origin/verilog/ams
+19ef45c75f30ceeef34068600ae13bcb398f6eea refs/tags/1.0
+^83cfe4a0e429def4336e58dbec7c56f3ee153941
+6361325da6ae93e831586fc2a797f8a42a37791b refs/tags/1.1
+^18ba58d85522762371ab7e05567bc86af6609797
+139cfd4c9b48195d026ce6143042f951c7f31c82 refs/tags/1.2
+^b81d12a7301d5431ea22c43ce3d535d28bd1ce62
+fba770891190021138eff74d861c318897bdaf75 refs/tags/2.0
+a701268de8ba4c6d5a422471137c3e9be1292b56 refs/tags/3.0

@@ -1,0 +1,7 @@
+e63a6d7093ab4a483eac7479e7d9ae8efff67472		branch 'master' of https://github.com/vhda/verilog_systemverilog.vim
+4f7fb1c45ffce69641bd7022ca8814f5ea5505fb	not-for-merge	branch 'github-runner' of https://github.com/vhda/verilog_systemverilog.vim
+6d3c10dbbef22788a89c8812aabd973bb466cf43	not-for-merge	branch 'indent/indent_assign_on_symbol' of https://github.com/vhda/verilog_systemverilog.vim
+e4e0ada8a99f26262926efc5f96c3bf29b869a48	not-for-merge	branch 'indent/standalone_blocks' of https://github.com/vhda/verilog_systemverilog.vim
+b993a00d146891e2647dec4b2e351d03e4baa3b2	not-for-merge	branch 'indent_from_syntax' of https://github.com/vhda/verilog_systemverilog.vim
+bfd776646ad1b9f4bf8a4d5fa5107973a671ade6	not-for-merge	branch 'omni/review' of https://github.com/vhda/verilog_systemverilog.vim
+e2a746a066924208e0fef48bdaea992459c838f0	not-for-merge	branch 'verilog/ams' of https://github.com/vhda/verilog_systemverilog.vim

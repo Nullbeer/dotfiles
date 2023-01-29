@@ -1,7 +1,33 @@
+" 添加.vimrc
+" chezmoi add .vimrc
+"
+" 应用更改
+" chezmoi apply -v
+
+
 call plug#begin()
 
+Plug 'easymotion/vim-easymotion'
+hi EasyMotionMoveHL ctermbg=green ctermfg=black
+let g:EasyMotion_smartcase = 1
+map  n <Plug>(easymotion-next)
+map  N <Plug>(easymotion-prev)
+map  / <Plug>(easymotion-sn)
+omap / <Plug>(easymotion-tn)
+nmap s <Plug>(easymotion-s2)
+map  f <Plug>(easymotion-bd-f)
+nmap f <Plug>(easymotion-overwin-f)
+" Move to line
+map <Leader>L <Plug>(easymotion-bd-jk)
+nmap <Leader>L <Plug>(easymotion-overwin-line)
+map  <Leader>w <Plug>(easymotion-bd-w)
+nmap <Leader>w <Plug>(easymotion-overwin-w)
+" map  <Leader>w <Plug>(easymotion-bd-w)
+" nmap <Leader>w <Plug>(easymotion-overwin-w)F
+" 快速移动插件
+
 Plug 'tpope/vim-commentary'
-autocmd FileType c,cpp set cms=//\ %s
+autocmd FileType c,cpp,v set cms=//\ %s
 " gcc注释一行，可使用.重复注释
 " gcu取消注释，也可重复使用gcc消除注释
 " gcgc可以消除连篇的注释
@@ -21,6 +47,9 @@ let g:VM_maps["Redo"] = '<C-r>'
 
 
 Plug 'airblade/vim-gitgutter'
+
+
+
 set updatetime=100
 highlight! link SignColumn LineNr 
 " 最多实现1000个标志，如果想使用消除约束个可以使用"-1"
@@ -30,9 +59,9 @@ let g:gitgutter_enabled = 0
 nmap <C-g><C-g> :GitGutterToggle<CR>
 
 "快速移动输入f <char><char>,可以快速移动到匹配的位置
-Plug 'justinmk/vim-sneak'
-map f <Plug>Sneak_s
-map F <Plug>Sneak_S
+" Plug 'justinmk/vim-sneak'
+" map f <Plug>Sneak_s
+" map F <Plug>Sneak_S
 
 	"自动匹配空格
 Plug 'jiangmiao/auto-pairs'
@@ -86,7 +115,7 @@ endfunction
 Plug 'kien/ctrlp.vim'
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
-map <leader>f :CtrlPMRU<CR>
+" map <leader>f :CtrlPMRU<CR>
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_custom_ignore = {
     \ 'dir':  '\v[\/]\.(git|hg|svn|rvm)$',
@@ -103,8 +132,6 @@ let g:ctrlp_follow_symlinks=1
 Plug 'preservim/nerdtree' 
 map <S-m> :NERDTreeToggle<CR>
 
-map <C-h> :tabp<CR>
-map <C-l> :tabn<CR>
 
 	"verilog插件
 Plug 'vhda/verilog_systemverilog.vim'
@@ -262,7 +289,7 @@ set relativenumber
 "使得固定在第5行
 set scrolloff=5
 "高亮搜索
-set hlsearch
+" set hlsearch
 "忽略大小写
 set ignorecase
 "Tab=4个空格
@@ -273,4 +300,12 @@ set clipboard=unnamed
 noremap <leader>y "+y
 noremap <leader>p "+p
 
+" 行和列进行高亮
+" set cuc
+" set cul
+" highlight CursorLine   cterm=NONE ctermbg=black ctermfg=None guibg=NONE guifg=NONE
+" highlight CursorColumn cterm=NONE ctermbg=black ctermfg=None guibg=NONE guifg=NONE
 
+noremap <C-h> :tabp<CR>
+noremap <C-l> :tabn<CR>
+noremap <leader><leader>h :noh<CR>
