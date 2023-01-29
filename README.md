@@ -1,6 +1,11 @@
 # dotfiles
 我的配置使用的是Chezmoi进行管理，chezmoi可以安全地跨多台不同的计算机管理您的点文件。因此在使用的我的配置之前需要安装Chezmoi
 
+# 目前包括
+  * .vimrc文件
+  * .tmux文件
+  * .vim中所有使用的插件——防止因为网速问题，下载不了
+
 ## 安装
 可以查看[https://www.chezmoi.io/install/](安装教程)
 这里推荐直接从源代码安装
@@ -18,4 +23,3 @@ make install-from-git-working-copy
 
 ## 如果您对 chezmoi 所做的更改感到满意，请运行：
 `chezmoi apply -v`
-
