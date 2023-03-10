@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/home/nbeer/ysyx-workbench'
+let g:netrw_dirhist_6='/home/nbeer/ysyx-workbench/nvboard/example/vsrc'
+let g:netrw_dirhist_5='/home/Xilinx'
+let g:netrw_dirhist_4='/home/nbeer/.Xilinx'
+let g:netrw_dirhist_3='/home/nbeer/ysyx-workbench/nvboard/example/vsrc'
+let g:netrw_dirhist_2='/home/nbeer/ysyx-workbench/npc/test_our'
+let g:netrw_dirhist_1='/home/nbeer/Desktop/Make_Learn/clean'

@@ -309,3 +309,5 @@ noremap <leader>p "+p
 noremap <C-h> :tabp<CR>
 noremap <C-l> :tabn<CR>
 noremap <leader><leader>h :noh<CR>
+
+set wildmenu
