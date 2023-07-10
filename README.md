@@ -23,3 +23,13 @@ make install-from-git-working-copy
 
 ## 如果您对 chezmoi 所做的更改感到满意，请运行：
 `chezmoi apply -v`
+
+# 快速使用
+直接将复制到用户目录，之后将`dot_`修改为`.`,即可直接使用。
+```
+cd ~
+git clone https://github.com/twpayne/chezmoi.git
+mv dot_vimrc .vimrc
+mv .dor_vim .vim
+```
+
